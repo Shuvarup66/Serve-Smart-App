@@ -1,0 +1,60 @@
+.menu-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 2px 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 8px 20px rgba(0,0,0,0.3);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.menu-card .info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-card h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.menu-card p {
+  margin: 0;
+  color: #555;
+}
+
+.menu-card .btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.menu-card .btn.add {
+  background: #4caf50;
+  color: white;
+}
+
+.menu-card .btn.remove {
+  background: #f44336;
+  color: white;
+}
+
+.menu-card .btn:hover {
+  opacity: 0.9;
+}
